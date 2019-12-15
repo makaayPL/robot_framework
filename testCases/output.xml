@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191215 13:37:07.576" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/tester/robot/testCases/testcase.robot" id="s1" name="Testcase">
+<test id="s1-t1" name="pass text to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Hej</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:09.210" starttime="20191215 13:37:09.209"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.210" critical="yes" starttime="20191215 13:37:09.207"></status>
+</test>
+<test id="s1-t2" name="pass var to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:09.215" starttime="20191215 13:37:09.214"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.215" critical="yes" starttime="20191215 13:37:09.212"></status>
+</test>
+<test id="s1-t3" name="pass var by keyword to the console">
+<kw name="Show text">
+<arguments>
+<arg>Hello</arg>
+<arg>World</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>${next}</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:09.228" starttime="20191215 13:37:09.227"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.228" starttime="20191215 13:37:09.222"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.229" critical="yes" starttime="20191215 13:37:09.217"></status>
+</test>
+<test id="s1-t4" name="pass var by console to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${x}</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:09.232" starttime="20191215 13:37:09.231"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.236" critical="yes" starttime="20191215 13:37:09.230"></status>
+</test>
+<test id="s1-t5" name="Login to remote machine">
+<kw name="otwarcie polaczenia do komputera">
+<kw name="Open Connection" library="SSHLibrary">
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<arguments>
+<arg>${host}</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:09.241" starttime="20191215 13:37:09.240"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:09.242" starttime="20191215 13:37:09.239"></status>
+</kw>
+<kw name="wprowadzenie uzytkownika i hasla">
+<kw name="Login" library="SSHLibrary">
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:09.244" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
+<msg timestamp="20191215 13:37:11.236" level="INFO">Read output: Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Overheard at KubeCon: "microk8s.status just blew my mind".
+
+     https://microk8s.io/docs/commands#microk8s.status
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+387 packages can be updated.
+92 updates are security updates.
+
+----------------------------------------------------------------
+  Ubuntu 18.04.1 LTS                          built 2018-10-04
+----------------------------------------------------------------
+Last login: Sun Dec 15 13:35:36 2019 from 127.0.0.1
+tester@tester-m:~$</msg>
+<status status="PASS" endtime="20191215 13:37:11.236" starttime="20191215 13:37:09.243"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.237" starttime="20191215 13:37:09.242"></status>
+</kw>
+<kw name="sprawdzenie komendy uname">
+<kw name="Execute Command" library="SSHLibrary">
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<arguments>
+<arg>uname -a</arg>
+</arguments>
+<assign>
+<var>${remoteControl}</var>
+</assign>
+<msg timestamp="20191215 13:37:11.238" level="INFO">Executing command 'uname -a'.</msg>
+<msg timestamp="20191215 13:37:11.263" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20191215 13:37:11.264" level="INFO">${remoteControl} = Linux tester-m 4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux</msg>
+<status status="PASS" endtime="20191215 13:37:11.264" starttime="20191215 13:37:11.238"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${remoteControl}</arg>
+<arg>GNU/Linux</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:11.265" starttime="20191215 13:37:11.264"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.265" starttime="20191215 13:37:11.237"></status>
+</kw>
+<kw name="zamkniecia polaczenia">
+<kw name="Close All Connections" library="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="PASS" endtime="20191215 13:37:11.304" starttime="20191215 13:37:11.266"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.304" starttime="20191215 13:37:11.265"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.304" critical="yes" starttime="20191215 13:37:09.237"></status>
+</test>
+<test id="s1-t6" name="Compare two strings">
+<kw name="Join Two Strings" library="mylibrary">
+<arguments>
+<arg>hello</arg>
+<arg>world</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20191215 13:37:11.307" level="INFO">${result} = hello world</msg>
+<status status="PASS" endtime="20191215 13:37:11.307" starttime="20191215 13:37:11.306"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:11.309" starttime="20191215 13:37:11.307"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.309" critical="yes" starttime="20191215 13:37:11.305"></status>
+</test>
+<test id="s1-t7" name="Add two numbers">
+<kw name="Add Two Numbers" library="mylibrary">
+<arguments>
+<arg>5</arg>
+<arg>4</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20191215 13:37:11.338" level="INFO">${result} = 9.0</msg>
+<status status="PASS" endtime="20191215 13:37:11.338" starttime="20191215 13:37:11.338"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>9.0</arg>
+</arguments>
+<msg timestamp="20191215 13:37:11.347" level="INFO">Argument types are:
+&lt;type 'str'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" endtime="20191215 13:37:11.347" starttime="20191215 13:37:11.346"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:11.366" critical="yes" starttime="20191215 13:37:11.313"></status>
+</test>
+<test id="s1-t8" name="Check data in dictionary">
+<kw name="Setup" library="Impansible">
+<assign>
+<var>${setup_result}</var>
+</assign>
+<msg timestamp="20191215 13:37:12.322" level="INFO">AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
+<msg timestamp="20191215 13:37:12.323" level="INFO">${setup_result} = {'ansible_facts': {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python...</msg>
+<status status="PASS" endtime="20191215 13:37:12.330" starttime="20191215 13:37:11.391"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${setup_result}</arg>
+<arg>ansible_facts</arg>
+</arguments>
+<assign>
+<var>${facts}</var>
+</assign>
+<msg timestamp="20191215 13:37:12.333" level="INFO">${facts} = {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python_present': False, ...</msg>
+<status status="PASS" endtime="20191215 13:37:12.333" starttime="20191215 13:37:12.332"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${facts}</arg>
+<arg>ansible_hostname</arg>
+</arguments>
+<assign>
+<var>${hostname}</var>
+</assign>
+<msg timestamp="20191215 13:37:12.334" level="INFO">${hostname} = tester-m</msg>
+<status status="PASS" endtime="20191215 13:37:12.335" starttime="20191215 13:37:12.334"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${hostname}</arg>
+<arg>tester-m</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:12.335" starttime="20191215 13:37:12.335"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${facts}</arg>
+<arg>ansible_distribution</arg>
+</arguments>
+<assign>
+<var>${distribution}</var>
+</assign>
+<msg timestamp="20191215 13:37:12.338" level="INFO">${distribution} = Ubuntu</msg>
+<status status="PASS" endtime="20191215 13:37:12.338" starttime="20191215 13:37:12.336"></status>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${distribution}</arg>
+<arg>Ubuntu</arg>
+</arguments>
+<status status="PASS" endtime="20191215 13:37:12.339" starttime="20191215 13:37:12.339"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:12.340" critical="yes" starttime="20191215 13:37:11.375"></status>
+</test>
+<test id="s1-t9" name="Login to poczta wp">
+<kw name="przejdz do strony poczta">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:12.351" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
+<msg timestamp="20191215 13:37:12.358" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-30.log</msg>
+<status status="PASS" endtime="20191215 13:37:27.564" starttime="20191215 13:37:12.350"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:27.564" starttime="20191215 13:37:12.342"></status>
+</kw>
+<kw name="wpisz nazwe uzytkownika">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${login_field}</arg>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:27.568" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
+<status status="PASS" endtime="20191215 13:37:28.748" starttime="20191215 13:37:27.566"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:28.748" starttime="20191215 13:37:27.565"></status>
+</kw>
+<kw name="wpisz haslo uzytkownika">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pass_field}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:28.751" level="INFO">Typing text 'adam1234' into text field '//*[@id='password']'.</msg>
+<status status="PASS" endtime="20191215 13:37:29.522" starttime="20191215 13:37:28.750"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:29.522" starttime="20191215 13:37:28.748"></status>
+</kw>
+<kw name="kliknij przycisk zaloguj">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${submit_button}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:29.525" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
+<status status="PASS" endtime="20191215 13:37:35.699" starttime="20191215 13:37:29.524"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:35.699" starttime="20191215 13:37:29.523"></status>
+</kw>
+<kw name="sprawdz czy jestes zalogowany">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191215 13:37:40.706" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 13:37:40.706" starttime="20191215 13:37:35.704"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${odebrane_section}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:43.468" level="INFO">Current page contains text 'Odebrane'.</msg>
+<status status="PASS" endtime="20191215 13:37:43.469" starttime="20191215 13:37:40.706"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:43.469" starttime="20191215 13:37:35.700"></status>
+</kw>
+<kw name="wyloguj sie">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${logout_button}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:43.471" level="INFO">Clicking element '//*[@id="Logout-Button"]'.</msg>
+<status status="PASS" endtime="20191215 13:37:45.628" starttime="20191215 13:37:43.470"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191215 13:37:50.630" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 13:37:50.630" starttime="20191215 13:37:45.628"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20191215 13:37:57.723" starttime="20191215 13:37:50.630"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:57.723" starttime="20191215 13:37:43.469"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:37:57.725" critical="yes" starttime="20191215 13:37:12.341"></status>
+</test>
+<test id="s1-t10" name="Incorrect Login to poczta wp">
+<kw name="przejdz do strony poczta">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20191215 13:37:57.730" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
+<msg timestamp="20191215 13:37:57.733" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-31.log</msg>
+<status status="PASS" endtime="20191215 13:38:11.450" starttime="20191215 13:37:57.729"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:11.450" starttime="20191215 13:37:57.728"></status>
+</kw>
+<kw name="wpisz nazwe uzytkownika">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${login_field}</arg>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20191215 13:38:11.458" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
+<status status="PASS" endtime="20191215 13:38:12.256" starttime="20191215 13:38:11.455"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:12.257" starttime="20191215 13:38:11.454"></status>
+</kw>
+<kw name="wpisz zle haslo uzytkownika">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pass_field}</arg>
+<arg>${wrong_pass}</arg>
+</arguments>
+<msg timestamp="20191215 13:38:12.265" level="INFO">Typing text 'janusz1234' into text field '//*[@id='password']'.</msg>
+<status status="PASS" endtime="20191215 13:38:12.936" starttime="20191215 13:38:12.263"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:12.937" starttime="20191215 13:38:12.260"></status>
+</kw>
+<kw name="kliknij przycisk zaloguj">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${submit_button}</arg>
+</arguments>
+<msg timestamp="20191215 13:38:12.938" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
+<status status="PASS" endtime="20191215 13:38:16.300" starttime="20191215 13:38:12.938"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:16.300" starttime="20191215 13:38:12.937"></status>
+</kw>
+<kw name="sprawdz informacje o blednym logowaniu">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191215 13:38:21.309" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 13:38:21.309" starttime="20191215 13:38:16.301"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${message_for_incorrect_password}</arg>
+</arguments>
+<msg timestamp="20191215 13:38:21.349" level="INFO">Current page contains text 'Niestety podany login lub hasło jest błędne.'.</msg>
+<status status="PASS" endtime="20191215 13:38:21.349" starttime="20191215 13:38:21.310"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:21.350" starttime="20191215 13:38:16.301"></status>
+</kw>
+<kw name="zamknij przegldarke">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20191215 13:38:27.340" starttime="20191215 13:38:21.351"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:27.340" starttime="20191215 13:38:21.350"></status>
+</kw>
+<status status="PASS" endtime="20191215 13:38:27.341" critical="yes" starttime="20191215 13:37:57.726"></status>
+</test>
+<status status="PASS" endtime="20191215 13:38:27.347" starttime="20191215 13:37:07.579"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="10">Critical Tests</stat>
+<stat fail="0" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testcase" pass="10">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

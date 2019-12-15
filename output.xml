@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191214 11:17:47.310" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/tester/robot/testCases/testcase.robot" id="s1" name="Testcase">
+<test id="s1-t1" name="pass text to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" endtime="20191214 11:17:47.353" starttime="20191214 11:17:47.352"></status>
+</kw>
+<status status="PASS" endtime="20191214 11:17:47.353" critical="yes" starttime="20191214 11:17:47.351"></status>
+</test>
+<test id="s1-t2" name="pass text to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" endtime="20191214 11:17:47.355" starttime="20191214 11:17:47.355"></status>
+</kw>
+<status status="PASS" endtime="20191214 11:17:47.355" critical="yes" starttime="20191214 11:17:47.354"></status>
+</test>
+<test id="s1-t3" name="pass text to the console">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20191214 11:17:47.358" level="FAIL">Keyword 'BuiltIn.Log To Console' expected 1 to 3 arguments, got 0.</msg>
+<status status="FAIL" endtime="20191214 11:17:47.358" starttime="20191214 11:17:47.357"></status>
+</kw>
+<status status="FAIL" endtime="20191214 11:17:47.358" critical="yes" starttime="20191214 11:17:47.357">Keyword 'BuiltIn.Log To Console' expected 1 to 3 arguments, got 0.</status>
+</test>
+<status status="FAIL" endtime="20191214 11:17:47.359" starttime="20191214 11:17:47.312"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Testcase" pass="2">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191214 11:17:47.354" level="WARN">Multiple test cases with name 'pass text to the console' executed in test suite 'Testcase'.</msg>
+<msg timestamp="20191214 11:17:47.356" level="WARN">Multiple test cases with name 'pass text to the console' executed in test suite 'Testcase'.</msg>
+</errors>
+</robot>
