@@ -1,0 +1,89 @@
+Robot Framework (sobota 14.12.2019)
+- biblioteka w pythonie
+- open source
+- generyczny Framework do automatyzacji testow
+
+Stack
+- external libs
+- IDE => RIDE
+- Robot Framework
+- Jython/Python
+
+Co daje nam RF
+
+- raporty
+- logowanie (bledow)
+- testy akceptacyjne dla biznesu
+- slowa kluczowe dla przypadkow testowych
+- tagowanie testow (dzielenie testow na priorytety [korowe czesci systemu])
+- zbior danych dla jednego szablonu (zamaist 1000 testow jeden z innymi danymi)
+- BDD
+
+Komponenty RF
+- pliki testowe (TestSuite => TestCases)
+- reuzywalne pliki (Resource Files)
+
+RF biblioteki
+- ssh (zdalny server)
+- selenium
+- swing/remote swing (java)
+- mozna testowac deskotop
+- suds (web services)
+- sikuli (web interface => wspiera selenium)
+- ok 200 tys bibliotek do roznych jezykow
+
+RF wewnetrzne biblioteki
+- kolekcje
+- zarzadzanie czasem
+- operacje wej/wyj
+- operacje na lancuchach (tekst)
+
+SKLADNIA
+
+*** Settings ***
+*** Variables ***
+${ZMIENNA}  tekst
+*** Test Cases ***
+MyTest
+  [Documentation] Example
+  My Keywords /tmp  //wywolanie wlasnego slowa kluczowego z parametrem
+*** Keywords ***
+My Keyword
+  [arguments] ${path}
+  Directory should exist  ${path}
+
+----------------------------
+cwiczenia
+
+1) virtualenv katalog
+2) cd katalog
+3) . bin/activate
+4) pip freeze //sprawdza jakie biblioteki sa dostepne w srodowisku virtualnym
+5) pip install nazwapakietu
+robotframework
+robotframework-impansible
+robotframework-nsm
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+selenium
+
+----------------------------
+testowanie
+
+testcase.robot // nazwa pliku
+*** Settings ***
+*** Variables ***
+*** Test Cases ***
+Bardzo Fajny Test Hello
+    Log To Console    Hej
+
+*** Keyword ***
+
+---------------------------
+uruchamianie
+
+robot testcase.robot
+robot -v zmienna:wartosc testcase.robot
+----------------------------
+
+Robot Framework (niedziela 15.12.2019)
