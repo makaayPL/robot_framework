@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20191215 13:37:07.576" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<robot rpa="false" generated="20191215 14:47:27.437" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
 <suite source="/home/tester/robot/testCases/testcase.robot" id="s1" name="Testcase">
 <test id="s1-t1" name="pass text to the console">
 <kw name="Log To Console" library="BuiltIn">
@@ -7,9 +7,9 @@
 <arguments>
 <arg>Hej</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:09.210" starttime="20191215 13:37:09.209"></status>
+<status status="PASS" endtime="20191215 14:47:28.831" starttime="20191215 14:47:28.830"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.210" critical="yes" starttime="20191215 13:37:09.207"></status>
+<status status="PASS" endtime="20191215 14:47:28.831" critical="yes" starttime="20191215 14:47:28.829"></status>
 </test>
 <test id="s1-t2" name="pass var to the console">
 <kw name="Log To Console" library="BuiltIn">
@@ -17,9 +17,9 @@
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:09.215" starttime="20191215 13:37:09.214"></status>
+<status status="PASS" endtime="20191215 14:47:28.833" starttime="20191215 14:47:28.833"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.215" critical="yes" starttime="20191215 13:37:09.212"></status>
+<status status="PASS" endtime="20191215 14:47:28.834" critical="yes" starttime="20191215 14:47:28.832"></status>
 </test>
 <test id="s1-t3" name="pass var by keyword to the console">
 <kw name="Show text">
@@ -33,11 +33,11 @@
 <arg>${text}</arg>
 <arg>${next}</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:09.228" starttime="20191215 13:37:09.227"></status>
+<status status="PASS" endtime="20191215 14:47:28.836" starttime="20191215 14:47:28.836"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.228" starttime="20191215 13:37:09.222"></status>
+<status status="PASS" endtime="20191215 14:47:28.836" starttime="20191215 14:47:28.835"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.229" critical="yes" starttime="20191215 13:37:09.217"></status>
+<status status="PASS" endtime="20191215 14:47:28.837" critical="yes" starttime="20191215 14:47:28.834"></status>
 </test>
 <test id="s1-t4" name="pass var by console to the console">
 <kw name="Log To Console" library="BuiltIn">
@@ -45,9 +45,9 @@
 <arguments>
 <arg>${x}</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:09.232" starttime="20191215 13:37:09.231"></status>
+<status status="PASS" endtime="20191215 14:47:28.842" starttime="20191215 14:47:28.838"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.236" critical="yes" starttime="20191215 13:37:09.230"></status>
+<status status="PASS" endtime="20191215 14:47:28.843" critical="yes" starttime="20191215 14:47:28.837"></status>
 </test>
 <test id="s1-t5" name="Login to remote machine">
 <kw name="otwarcie polaczenia do komputera">
@@ -56,9 +56,9 @@
 <arguments>
 <arg>${host}</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:09.241" starttime="20191215 13:37:09.240"></status>
+<status status="PASS" endtime="20191215 14:47:28.846" starttime="20191215 14:47:28.846"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:09.242" starttime="20191215 13:37:09.239"></status>
+<status status="PASS" endtime="20191215 14:47:28.846" starttime="20191215 14:47:28.845"></status>
 </kw>
 <kw name="wprowadzenie uzytkownika i hasla">
 <kw name="Login" library="SSHLibrary">
@@ -67,8 +67,8 @@
 <arg>${USERNAME}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:09.244" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
-<msg timestamp="20191215 13:37:11.236" level="INFO">Read output: Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-29-generic x86_64)
+<msg timestamp="20191215 14:47:28.848" level="INFO">Logging into 'localhost:22' as 'tester'.</msg>
+<msg timestamp="20191215 14:47:30.985" level="INFO">Read output: Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-29-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
@@ -88,11 +88,11 @@
 ----------------------------------------------------------------
   Ubuntu 18.04.1 LTS                          built 2018-10-04
 ----------------------------------------------------------------
-Last login: Sun Dec 15 13:35:36 2019 from 127.0.0.1
+Last login: Sun Dec 15 13:37:10 2019 from 127.0.0.1
 tester@tester-m:~$</msg>
-<status status="PASS" endtime="20191215 13:37:11.236" starttime="20191215 13:37:09.243"></status>
+<status status="PASS" endtime="20191215 14:47:30.986" starttime="20191215 14:47:28.847"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.237" starttime="20191215 13:37:09.242"></status>
+<status status="PASS" endtime="20191215 14:47:30.986" starttime="20191215 14:47:28.847"></status>
 </kw>
 <kw name="sprawdzenie komendy uname">
 <kw name="Execute Command" library="SSHLibrary">
@@ -103,10 +103,10 @@ tester@tester-m:~$</msg>
 <assign>
 <var>${remoteControl}</var>
 </assign>
-<msg timestamp="20191215 13:37:11.238" level="INFO">Executing command 'uname -a'.</msg>
-<msg timestamp="20191215 13:37:11.263" level="INFO">Command exited with return code 0.</msg>
-<msg timestamp="20191215 13:37:11.264" level="INFO">${remoteControl} = Linux tester-m 4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux</msg>
-<status status="PASS" endtime="20191215 13:37:11.264" starttime="20191215 13:37:11.238"></status>
+<msg timestamp="20191215 14:47:30.988" level="INFO">Executing command 'uname -a'.</msg>
+<msg timestamp="20191215 14:47:31.004" level="INFO">Command exited with return code 0.</msg>
+<msg timestamp="20191215 14:47:31.004" level="INFO">${remoteControl} = Linux tester-m 4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux</msg>
+<status status="PASS" endtime="20191215 14:47:31.004" starttime="20191215 14:47:30.988"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -114,18 +114,18 @@ tester@tester-m:~$</msg>
 <arg>${remoteControl}</arg>
 <arg>GNU/Linux</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:11.265" starttime="20191215 13:37:11.264"></status>
+<status status="PASS" endtime="20191215 14:47:31.006" starttime="20191215 14:47:31.005"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.265" starttime="20191215 13:37:11.237"></status>
+<status status="PASS" endtime="20191215 14:47:31.007" starttime="20191215 14:47:30.986"></status>
 </kw>
 <kw name="zamkniecia polaczenia">
 <kw name="Close All Connections" library="SSHLibrary">
 <doc>Closes all open connections.</doc>
-<status status="PASS" endtime="20191215 13:37:11.304" starttime="20191215 13:37:11.266"></status>
+<status status="PASS" endtime="20191215 14:47:31.079" starttime="20191215 14:47:31.008"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.304" starttime="20191215 13:37:11.265"></status>
+<status status="PASS" endtime="20191215 14:47:31.079" starttime="20191215 14:47:31.007"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.304" critical="yes" starttime="20191215 13:37:09.237"></status>
+<status status="PASS" endtime="20191215 14:47:31.080" critical="yes" starttime="20191215 14:47:28.844"></status>
 </test>
 <test id="s1-t6" name="Compare two strings">
 <kw name="Join Two Strings" library="mylibrary">
@@ -136,8 +136,8 @@ tester@tester-m:~$</msg>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20191215 13:37:11.307" level="INFO">${result} = hello world</msg>
-<status status="PASS" endtime="20191215 13:37:11.307" starttime="20191215 13:37:11.306"></status>
+<msg timestamp="20191215 14:47:31.088" level="INFO">${result} = hello world</msg>
+<status status="PASS" endtime="20191215 14:47:31.088" starttime="20191215 14:47:31.087"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -145,9 +145,9 @@ tester@tester-m:~$</msg>
 <arg>${result}</arg>
 <arg>hello world</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:11.309" starttime="20191215 13:37:11.307"></status>
+<status status="PASS" endtime="20191215 14:47:31.094" starttime="20191215 14:47:31.092"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.309" critical="yes" starttime="20191215 13:37:11.305"></status>
+<status status="PASS" endtime="20191215 14:47:31.101" critical="yes" starttime="20191215 14:47:31.085"></status>
 </test>
 <test id="s1-t7" name="Add two numbers">
 <kw name="Add Two Numbers" library="mylibrary">
@@ -158,8 +158,8 @@ tester@tester-m:~$</msg>
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20191215 13:37:11.338" level="INFO">${result} = 9.0</msg>
-<status status="PASS" endtime="20191215 13:37:11.338" starttime="20191215 13:37:11.338"></status>
+<msg timestamp="20191215 14:47:31.113" level="INFO">${result} = 9.0</msg>
+<status status="PASS" endtime="20191215 14:47:31.113" starttime="20191215 14:47:31.113"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -167,27 +167,27 @@ tester@tester-m:~$</msg>
 <arg>${result}</arg>
 <arg>9.0</arg>
 </arguments>
-<msg timestamp="20191215 13:37:11.347" level="INFO">Argument types are:
+<msg timestamp="20191215 14:47:31.117" level="INFO">Argument types are:
 &lt;type 'str'&gt;
 &lt;type 'unicode'&gt;</msg>
-<status status="PASS" endtime="20191215 13:37:11.347" starttime="20191215 13:37:11.346"></status>
+<status status="PASS" endtime="20191215 14:47:31.117" starttime="20191215 14:47:31.116"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:11.366" critical="yes" starttime="20191215 13:37:11.313"></status>
+<status status="PASS" endtime="20191215 14:47:31.122" critical="yes" starttime="20191215 14:47:31.102"></status>
 </test>
 <test id="s1-t8" name="Check data in dictionary">
 <kw name="Setup" library="Impansible">
 <assign>
 <var>${setup_result}</var>
 </assign>
-<msg timestamp="20191215 13:37:12.322" level="INFO">AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
+<msg timestamp="20191215 14:47:31.814" level="INFO">AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)
 AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
-<msg timestamp="20191215 13:37:12.323" level="INFO">${setup_result} = {'ansible_facts': {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python...</msg>
-<status status="PASS" endtime="20191215 13:37:12.330" starttime="20191215 13:37:11.391"></status>
+<msg timestamp="20191215 14:47:31.816" level="INFO">${setup_result} = {'ansible_facts': {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python...</msg>
+<status status="PASS" endtime="20191215 14:47:31.821" starttime="20191215 14:47:31.125"></status>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -198,8 +198,8 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <assign>
 <var>${facts}</var>
 </assign>
-<msg timestamp="20191215 13:37:12.333" level="INFO">${facts} = {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python_present': False, ...</msg>
-<status status="PASS" endtime="20191215 13:37:12.333" starttime="20191215 13:37:12.332"></status>
+<msg timestamp="20191215 14:47:31.822" level="INFO">${facts} = {'gather_subset': ['all'], 'ansible_distribution_file_parsed': True, 'ansible_fips': False, 'ansible_service_mgr': 'systemd', 'ansible_fibre_channel_wwn': [], 'ansible_selinux_python_present': False, ...</msg>
+<status status="PASS" endtime="20191215 14:47:31.823" starttime="20191215 14:47:31.821"></status>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -210,8 +210,8 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <assign>
 <var>${hostname}</var>
 </assign>
-<msg timestamp="20191215 13:37:12.334" level="INFO">${hostname} = tester-m</msg>
-<status status="PASS" endtime="20191215 13:37:12.335" starttime="20191215 13:37:12.334"></status>
+<msg timestamp="20191215 14:47:31.829" level="INFO">${hostname} = tester-m</msg>
+<status status="PASS" endtime="20191215 14:47:31.830" starttime="20191215 14:47:31.829"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -219,7 +219,7 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${hostname}</arg>
 <arg>tester-m</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:12.335" starttime="20191215 13:37:12.335"></status>
+<status status="PASS" endtime="20191215 14:47:31.831" starttime="20191215 14:47:31.830"></status>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -230,8 +230,8 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <assign>
 <var>${distribution}</var>
 </assign>
-<msg timestamp="20191215 13:37:12.338" level="INFO">${distribution} = Ubuntu</msg>
-<status status="PASS" endtime="20191215 13:37:12.338" starttime="20191215 13:37:12.336"></status>
+<msg timestamp="20191215 14:47:31.834" level="INFO">${distribution} = Ubuntu</msg>
+<status status="PASS" endtime="20191215 14:47:31.834" starttime="20191215 14:47:31.833"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -239,9 +239,9 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${distribution}</arg>
 <arg>Ubuntu</arg>
 </arguments>
-<status status="PASS" endtime="20191215 13:37:12.339" starttime="20191215 13:37:12.339"></status>
+<status status="PASS" endtime="20191215 14:47:31.835" starttime="20191215 14:47:31.834"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:12.340" critical="yes" starttime="20191215 13:37:11.375"></status>
+<status status="PASS" endtime="20191215 14:47:31.835" critical="yes" starttime="20191215 14:47:31.124"></status>
 </test>
 <test id="s1-t9" name="Login to poczta wp">
 <kw name="przejdz do strony poczta">
@@ -249,12 +249,13 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${link}</arg>
+<arg>${browser}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:12.351" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
-<msg timestamp="20191215 13:37:12.358" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-30.log</msg>
-<status status="PASS" endtime="20191215 13:37:27.564" starttime="20191215 13:37:12.350"></status>
+<msg timestamp="20191215 14:47:31.839" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
+<msg timestamp="20191215 14:47:31.844" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-32.log</msg>
+<status status="PASS" endtime="20191215 14:47:43.014" starttime="20191215 14:47:31.838"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:27.564" starttime="20191215 13:37:12.342"></status>
+<status status="PASS" endtime="20191215 14:47:43.016" starttime="20191215 14:47:31.837"></status>
 </kw>
 <kw name="wpisz nazwe uzytkownika">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -263,10 +264,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${login_field}</arg>
 <arg>${login}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:27.568" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
-<status status="PASS" endtime="20191215 13:37:28.748" starttime="20191215 13:37:27.566"></status>
+<msg timestamp="20191215 14:47:43.020" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
+<status status="PASS" endtime="20191215 14:47:43.846" starttime="20191215 14:47:43.019"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:28.748" starttime="20191215 13:37:27.565"></status>
+<status status="PASS" endtime="20191215 14:47:43.846" starttime="20191215 14:47:43.017"></status>
 </kw>
 <kw name="wpisz haslo uzytkownika">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -275,10 +276,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${pass_field}</arg>
 <arg>${pass}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:28.751" level="INFO">Typing text 'adam1234' into text field '//*[@id='password']'.</msg>
-<status status="PASS" endtime="20191215 13:37:29.522" starttime="20191215 13:37:28.750"></status>
+<msg timestamp="20191215 14:47:43.851" level="INFO">Typing text 'adam1234' into text field '//*[@id='password']'.</msg>
+<status status="PASS" endtime="20191215 14:47:44.237" starttime="20191215 14:47:43.849"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:29.522" starttime="20191215 13:37:28.748"></status>
+<status status="PASS" endtime="20191215 14:47:44.237" starttime="20191215 14:47:43.847"></status>
 </kw>
 <kw name="kliknij przycisk zaloguj">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -286,10 +287,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arguments>
 <arg>${submit_button}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:29.525" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
-<status status="PASS" endtime="20191215 13:37:35.699" starttime="20191215 13:37:29.524"></status>
+<msg timestamp="20191215 14:47:44.244" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
+<status status="PASS" endtime="20191215 14:47:48.542" starttime="20191215 14:47:44.243"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:35.699" starttime="20191215 13:37:29.523"></status>
+<status status="PASS" endtime="20191215 14:47:48.543" starttime="20191215 14:47:44.237"></status>
 </kw>
 <kw name="sprawdz czy jestes zalogowany">
 <kw name="Sleep" library="BuiltIn">
@@ -297,18 +298,18 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20191215 13:37:40.706" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20191215 13:37:40.706" starttime="20191215 13:37:35.704"></status>
+<msg timestamp="20191215 14:47:53.554" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 14:47:53.554" starttime="20191215 14:47:48.546"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${odebrane_section}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:43.468" level="INFO">Current page contains text 'Odebrane'.</msg>
-<status status="PASS" endtime="20191215 13:37:43.469" starttime="20191215 13:37:40.706"></status>
+<msg timestamp="20191215 14:47:54.069" level="INFO">Current page contains text 'Odebrane'.</msg>
+<status status="PASS" endtime="20191215 14:47:54.069" starttime="20191215 14:47:53.554"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:43.469" starttime="20191215 13:37:35.700"></status>
+<status status="PASS" endtime="20191215 14:47:54.070" starttime="20191215 14:47:48.545"></status>
 </kw>
 <kw name="wyloguj sie">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -316,24 +317,24 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arguments>
 <arg>${logout_button}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:43.471" level="INFO">Clicking element '//*[@id="Logout-Button"]'.</msg>
-<status status="PASS" endtime="20191215 13:37:45.628" starttime="20191215 13:37:43.470"></status>
+<msg timestamp="20191215 14:47:54.072" level="INFO">Clicking element '//*[@id="Logout-Button"]'.</msg>
+<status status="PASS" endtime="20191215 14:47:56.110" starttime="20191215 14:47:54.071"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20191215 13:37:50.630" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20191215 13:37:50.630" starttime="20191215 13:37:45.628"></status>
+<msg timestamp="20191215 14:48:01.111" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 14:48:01.111" starttime="20191215 14:47:56.110"></status>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20191215 13:37:57.723" starttime="20191215 13:37:50.630"></status>
+<status status="PASS" endtime="20191215 14:48:08.738" starttime="20191215 14:48:01.112"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:57.723" starttime="20191215 13:37:43.469"></status>
+<status status="PASS" endtime="20191215 14:48:08.738" starttime="20191215 14:47:54.070"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:37:57.725" critical="yes" starttime="20191215 13:37:12.341"></status>
+<status status="PASS" endtime="20191215 14:48:08.739" critical="yes" starttime="20191215 14:47:31.836"></status>
 </test>
 <test id="s1-t10" name="Incorrect Login to poczta wp">
 <kw name="przejdz do strony poczta">
@@ -341,12 +342,13 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${link}</arg>
+<arg>${browser}</arg>
 </arguments>
-<msg timestamp="20191215 13:37:57.730" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
-<msg timestamp="20191215 13:37:57.733" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-31.log</msg>
-<status status="PASS" endtime="20191215 13:38:11.450" starttime="20191215 13:37:57.729"></status>
+<msg timestamp="20191215 14:48:08.748" level="INFO">Opening browser 'firefox' to base url 'https://www.poczta.wp.pl'.</msg>
+<msg timestamp="20191215 14:48:08.755" level="INFO">Firefox driver log is always forced to to: /home/tester/robot/testCases/geckodriver-33.log</msg>
+<status status="PASS" endtime="20191215 14:48:25.057" starttime="20191215 14:48:08.747"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:11.450" starttime="20191215 13:37:57.728"></status>
+<status status="PASS" endtime="20191215 14:48:25.058" starttime="20191215 14:48:08.747"></status>
 </kw>
 <kw name="wpisz nazwe uzytkownika">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -355,10 +357,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${login_field}</arg>
 <arg>${login}</arg>
 </arguments>
-<msg timestamp="20191215 13:38:11.458" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
-<status status="PASS" endtime="20191215 13:38:12.256" starttime="20191215 13:38:11.455"></status>
+<msg timestamp="20191215 14:48:25.060" level="INFO">Typing text 'testerwsb_t1' into text field '//*[@id='login']'.</msg>
+<status status="PASS" endtime="20191215 14:48:25.408" starttime="20191215 14:48:25.060"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:12.257" starttime="20191215 13:38:11.454"></status>
+<status status="PASS" endtime="20191215 14:48:25.408" starttime="20191215 14:48:25.058"></status>
 </kw>
 <kw name="wpisz zle haslo uzytkownika">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -367,10 +369,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arg>${pass_field}</arg>
 <arg>${wrong_pass}</arg>
 </arguments>
-<msg timestamp="20191215 13:38:12.265" level="INFO">Typing text 'janusz1234' into text field '//*[@id='password']'.</msg>
-<status status="PASS" endtime="20191215 13:38:12.936" starttime="20191215 13:38:12.263"></status>
+<msg timestamp="20191215 14:48:25.421" level="INFO">Typing text 'janusz1234' into text field '//*[@id='password']'.</msg>
+<status status="PASS" endtime="20191215 14:48:25.577" starttime="20191215 14:48:25.410"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:12.937" starttime="20191215 13:38:12.260"></status>
+<status status="PASS" endtime="20191215 14:48:25.578" starttime="20191215 14:48:25.409"></status>
 </kw>
 <kw name="kliknij przycisk zaloguj">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -378,10 +380,10 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arguments>
 <arg>${submit_button}</arg>
 </arguments>
-<msg timestamp="20191215 13:38:12.938" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
-<status status="PASS" endtime="20191215 13:38:16.300" starttime="20191215 13:38:12.938"></status>
+<msg timestamp="20191215 14:48:25.581" level="INFO">Clicking element '//*[@id="btnSubmit"]'.</msg>
+<status status="PASS" endtime="20191215 14:48:28.095" starttime="20191215 14:48:25.579"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:16.300" starttime="20191215 13:38:12.937"></status>
+<status status="PASS" endtime="20191215 14:48:28.096" starttime="20191215 14:48:25.578"></status>
 </kw>
 <kw name="sprawdz informacje o blednym logowaniu">
 <kw name="Sleep" library="BuiltIn">
@@ -389,29 +391,29 @@ AttributeError("'MyAnsibleHack2' object has no attribute 'get_bin_path'",)</msg>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20191215 13:38:21.309" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20191215 13:38:21.309" starttime="20191215 13:38:16.301"></status>
+<msg timestamp="20191215 14:48:33.098" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191215 14:48:33.098" starttime="20191215 14:48:28.097"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>${message_for_incorrect_password}</arg>
 </arguments>
-<msg timestamp="20191215 13:38:21.349" level="INFO">Current page contains text 'Niestety podany login lub hasło jest błędne.'.</msg>
-<status status="PASS" endtime="20191215 13:38:21.349" starttime="20191215 13:38:21.310"></status>
+<msg timestamp="20191215 14:48:33.142" level="INFO">Current page contains text 'Niestety podany login lub hasło jest błędne.'.</msg>
+<status status="PASS" endtime="20191215 14:48:33.142" starttime="20191215 14:48:33.100"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:21.350" starttime="20191215 13:38:16.301"></status>
+<status status="PASS" endtime="20191215 14:48:33.143" starttime="20191215 14:48:28.096"></status>
 </kw>
 <kw name="zamknij przegldarke">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20191215 13:38:27.340" starttime="20191215 13:38:21.351"></status>
+<status status="PASS" endtime="20191215 14:48:38.014" starttime="20191215 14:48:33.144"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:27.340" starttime="20191215 13:38:21.350"></status>
+<status status="PASS" endtime="20191215 14:48:38.014" starttime="20191215 14:48:33.143"></status>
 </kw>
-<status status="PASS" endtime="20191215 13:38:27.341" critical="yes" starttime="20191215 13:37:57.726"></status>
+<status status="PASS" endtime="20191215 14:48:38.015" critical="yes" starttime="20191215 14:48:08.745"></status>
 </test>
-<status status="PASS" endtime="20191215 13:38:27.347" starttime="20191215 13:37:07.579"></status>
+<status status="PASS" endtime="20191215 14:48:38.018" starttime="20191215 14:47:27.441"></status>
 </suite>
 <statistics>
 <total>

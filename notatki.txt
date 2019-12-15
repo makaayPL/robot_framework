@@ -88,3 +88,9 @@ robot -v zmienna:wartosc testcase.robot
 
 Robot Framework (niedziela 15.12.2019)
 https://sii.pl/blog/robot-framework-wprowadzenie-do-automatyzacji-testow-aplikacji-webowej/
+
+
+nsm
+python -m nsm mykeywords
+python -m nsm english
+python -m nsm nsm

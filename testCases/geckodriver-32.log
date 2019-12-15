@@ -1,0 +1,76 @@
+1576417651903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileozJL90"
+1576417653260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1576417653261	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1576417653262	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1576417653263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1576417659909	Marionette	INFO	Listening on port 37719
+1576417659998	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:18937): dconf-WARNING **: 14:47:44.312: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1576417675084	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+_wrapBuiltIns/</<@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:35:225026
+XMLHttpRequest.prototype.send@https://poczta.wp.pl/k/universal-bundle_18c9d2be.js:1:697657
+v/t.wasSuccess<@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:100703
+v@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:100753
+e.a/<@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:103344
+value@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:77770
+value@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:77904
+e.a@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:103317
+e.a@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:88683
+s@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:126736
+p@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:126906
+j@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:167973
+p@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:18692
+y/</u[t]@https://std.wpcdn.pl/wpjslib/wpjslib-sgap.js:1:19347
+formSubmit@https://poczta.wp.pl/k/universal-bundle_18c9d2be.js:1:282172
+value@https://poczta.wp.pl/k/universal-bundle_18c9d2be.js:1:451544
+ca@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:4256
+ja@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:4341
+ka@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:4398
+wa@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:5041
+Aa@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:5472
+ya@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:5293
+Da@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:6124
+Ad@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:17609
+Gi@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:77909
+Kb@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:9569
+Dd@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:18080
+Ii/<@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:78179
+exports.unstable_runWithPriority@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:59:1860
+Ii@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:78104
+Cd@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:43:17822
+wrapped@https://poczta.wp.pl/k/vendor-bundle_18c9d2be.js:35:219208
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+1576417681117	Marionette	INFO	Stopped listening on port 37719
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

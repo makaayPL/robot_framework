@@ -4,6 +4,7 @@ Library                mylibrary.py
 Library                Impansible
 Library                Collections
 Library                SeleniumLibrary
+
 *** Variables ***
 ${text}                Elo
 ${x}
@@ -11,6 +12,7 @@ ${HOST}                localhost
 ${USERNAME}            tester
 ${PASSWORD}            tester
 
+${browser}             firefox
 ${login}               testerwsb_t1
 ${pass}                adam1234
 ${wrong_pass}          janusz1234
@@ -98,7 +100,7 @@ zamkniecia polaczenia
     Close All Connections
 
 przejdz do strony poczta
-    Open Browser    ${link}
+    Open Browser    ${link}   ${browser}
 
 wpisz nazwe uzytkownika
     Input text    ${login_field}    ${login}
