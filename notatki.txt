@@ -84,6 +84,17 @@ uruchamianie
 
 robot testcase.robot
 robot -v zmienna:wartosc testcase.robot
+
+----------------------------
+Driver do przeglądarki
+
+geckodriver => https://github.com/mozilla/geckodriver/releases
+wypakować w => nazwaVirtualnegoKatalogu/bin
+
+----------------------------
+SSH Library
+sudo apt-get install ssh
+
 ----------------------------
 
 Robot Framework (niedziela 15.12.2019)
